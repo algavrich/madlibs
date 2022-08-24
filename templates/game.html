@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Madlib Game{% endblock %}
+
+{% block content %}
+
+	<form action="/madlib">
+
+		<fieldset>
+
+			<legend>Choose your words</legend>
+
+			<div>
+
+				<label for="person">Pick a person</label>
+
+				<select name="word-person" id="person">
+					<option value="Cleopatra">Cleopatra</option>
+					<option value="Barack Obama">Barack Obama</option>
+					<option value="Harry Styles">Harry Styles</option>
+				</select>
+
+			</div>
+
+			<div>
+
+				<label for="color">Pick a color</label>
+
+				<select name="word-color" id="color">
+					<option value="chartreuse">Chartreuse</option>
+					<option value="periwinkle">Periwinkle</option>
+					<option value="rust">Rust</option>
+				</select>
+
+			</div>
+
+			<div>
+
+				<label for="noun">Pick a noun</label>
+
+				<select name="word-noun" id="noun">
+					<option value="Statue of Liberty">Statue of Liberty</option>
+					<option value="banana bread">Banana Bread</option>
+					<option value="catalytic converter">Catalytic Converter</option>
+				</select>
+
+			</div>
+
+			<div>
+
+				<label for="adjective">Pick an adjective</label>
+
+				<select name="word-adjective" id="adjective">
+					<option value="charming">Charming</option>
+					<option value="romantic">Romantic</option>
+					<option value="smelly">Smelly</option>
+				</select>
+
+			</div>
+
+		</fieldset>
+		<input type="submit">
+	</form>
+
+{% endblock %}
